@@ -29,13 +29,13 @@ const VerifyEmail = () => {
                             </div>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <p>Didn&apos;t receive a Link? <span className='text-red-600 cursor-pointer'>Resend Link</span> </p>
+                            <p>Didn&apos;t receive a Link?  </p>
                             <Button
                                 onClick={() => router.push('/login')}
                                 type="submit"
                                 className="bg-red-700 cursor-pointer text-white"
                             >
-                                {isLoading ? <Spinner /> : "Verify"}
+                                {isLoading ? <Spinner /> : "Resend Link"}
 
                             </Button>
 

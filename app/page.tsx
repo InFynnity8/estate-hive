@@ -1,10 +1,30 @@
 
-import Link from "next/link";
+"use client"
+import { HeroSection } from "@/components/sections/Hero";
+import TrendingListings from "@/components/sections/TrendingListing";
+
+import { FaApple, FaGoogle, FaMicrosoft, FaAmazon, FaFacebook } from 'react-icons/fa';
+
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <p>Home</p>
+    <div className=" min-h-screen mt-10">
+      <HeroSection />
+      <section className="text-center py-10 bg-slate-50">
+        <h3 className="text-lg font-semibold text-neutral-700">
+          TRUSTED BY
+        </h3>
+
+        <div className="flex flex-wrap justify-center items-center gap-10 text-neutral-800 text-6xl my-5">
+          <FaApple />
+          <FaGoogle />
+          <FaMicrosoft />
+          <FaAmazon />
+          <FaFacebook />
+        </div>
+      </section>
+
+      <TrendingListings />
     </div>
   );
 }
