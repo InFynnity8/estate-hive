@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 
 export default function TrendingListings() {
-      const router = useRouter();
+    const router = useRouter();
     const listings = [
         {
             id: 1,
@@ -76,7 +76,7 @@ export default function TrendingListings() {
                             location={listing.location}
                             description={listing.description}
                             price={listing.price}
-                            onViewDetails={() => alert(`Viewing ${listing.title}`)}
+                            onViewDetails={() => router.push('/properties/details')}
                         />
                     ))}
                 </div>
@@ -116,7 +116,7 @@ export default function TrendingListings() {
                     onClick={() => router.push('/properties')}
                     className="px-10 cursor-pointer w-fit bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition"
                 >
-                 See all properties
+                    See all properties
                 </Button>
             </div>
 
