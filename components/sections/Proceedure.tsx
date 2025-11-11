@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Proceedure = () => {
   return (
-    <section className="min-h-[80vh] px-6 md:px-16 py-16 bg-slate-50 grid items-center justify-between grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="min-h-[80vh] px-6 md:px-16 py-16 pb-25 bg-slate-50 grid items-center justify-between grid-cols-1 lg:grid-cols-2 gap-10">
    
       <div className="flex flex-col gap-5 flex-1">
         <h1 className="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
@@ -90,7 +90,7 @@ const Proceedure = () => {
           </div>
 
      
-          <div className="absolute -bottom-10 -left-8 w-32 h-32 rounded-full overflow-hidden shadow-md z-20">
+          <div className="absolute -bottom-5 -left-8 w-32 h-32 rounded-full overflow-hidden shadow-md z-20">
             <Image
               src="/step3.jpg"
               alt="Luxury house step 3"
