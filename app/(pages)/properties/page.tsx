@@ -2,7 +2,7 @@ import React from 'react'
 
 const Properties = () => {
   return (
-    <div>Properties</div>
+        <div className=" min-h-screen mt-16">Properties</div>
   )
 }
 

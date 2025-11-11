@@ -5,8 +5,8 @@ import { MapPin, Search } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative h-[80vh] flex items-center justify-center text-center">
-      {/* Background image */}
+    <section className="relative h-[90vh] flex items-center justify-center text-center">
+
       <div className="absolute inset-0">
         <Image
           src="/hero.jpg"

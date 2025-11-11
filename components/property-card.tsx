@@ -1,6 +1,7 @@
 "use client"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface PropertyCardProps {
     image: string;
@@ -42,12 +43,12 @@ export function PropertyCard({
             <CardContent className="flex flex-col gap-2">
                 <p className="text-sm text-gray-600 line-clamp-2">{description}</p>
                 <p className="text-sm text-gray-700 mt-1">{price}</p>
-                <button
+                <Button
                     onClick={onViewDetails}
                     className="mt-3 w-full bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition"
                 >
                     View Property Details
-                </button>
+                </Button>
             </CardContent>
         </Card>
     );

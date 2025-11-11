@@ -1,8 +1,11 @@
-
+"use client"
 import { PropertyCard } from "../property-card";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export default function TrendingListings() {
+      const router = useRouter();
     const listings = [
         {
             id: 1,
@@ -108,7 +111,14 @@ export default function TrendingListings() {
                 </div>
             </div>
 
-
+            <div className="w-full flex items-center justify-center">
+                <Button
+                    onClick={() => router.push('/properties')}
+                    className="px-10 cursor-pointer w-fit bg-red-700 text-white py-2 rounded-md hover:bg-red-800 transition"
+                >
+                 See all properties
+                </Button>
+            </div>
 
         </section>
     );
