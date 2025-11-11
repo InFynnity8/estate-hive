@@ -55,8 +55,8 @@ const Properties = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100  mt-16">
-      <div className="max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <div className="">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
 
           <div className="lg:col-span-1">
             <Card className="sticky shadow-none top-16 border-0 border-r-1 border-r-slate-200 backdrop-blur rounded-none min-h-screen">
@@ -207,7 +207,7 @@ const Properties = () => {
           </div>
 
 
-          <div className="lg:col-span-3 py-4 md:py-8">
+          <div className="lg:col-span-4 px-6 py-4 md:py-8 flex items-start w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {properties.map((property, index) => (
                 <PropertyCard onViewDetails= {() => router.push('/properties/details')} key={index} image={property.image} title={property.name} description={property.description} price={property.price} location={property.location} />
