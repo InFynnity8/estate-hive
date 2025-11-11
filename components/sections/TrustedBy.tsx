@@ -3,7 +3,7 @@ import { FaApple, FaGoogle, FaMicrosoft, FaAmazon, FaFacebook } from 'react-icon
 
 const TrustedBy = () => {
     return (
-        <section className="text-center py-10 bg-slate-50">
+        <section className="text-center py-10 bg-slate-50 px-4">
             <h3 className="text-lg font-semibold text-neutral-700">
                 TRUSTED BY
             </h3>
