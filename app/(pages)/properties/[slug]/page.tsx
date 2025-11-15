@@ -106,12 +106,6 @@ export default function PropertyDetail() {
                                 Reviews
                             </TabsTrigger>
                             <TabsTrigger
-                                value="directions"
-                                className="relative data-[state=active]:text-red-600 data-[state=active]:after:absolute data-[state=active]:after:-bottom-[2px] data-[state=active]:after:left-0 data-[state=active]:after:h-[2px] data-[state=active]:after:w-full data-[state=active]:after:bg-red-600 rounded-none text-gray-700"
-                            >
-                                Directions
-                            </TabsTrigger>
-                            <TabsTrigger
                                 value="map"
                                 className="relative data-[state=active]:text-red-600 data-[state=active]:after:absolute data-[state=active]:after:-bottom-[2px] data-[state=active]:after:left-0 data-[state=active]:after:h-[2px] data-[state=active]:after:w-full data-[state=active]:after:bg-red-600 rounded-none text-gray-700"
                             >
@@ -141,16 +135,6 @@ export default function PropertyDetail() {
                                 ))}
                             </ScrollArea>
                         </TabsContent>
-
-
-                        <TabsContent value="directions" className="text-gray-700 text-sm leading-relaxed">
-                            <p>
-                                JP Morgan Estate is conveniently located in Airport Residential, just a 10-minute drive
-                                from Kotoka International Airport. You can easily access it via Liberation Road
-                                towards the north. Private parking and shuttle services are available on request.
-                            </p>
-                        </TabsContent>
-
 
                         <TabsContent value="map" className="text-gray-700 text-sm leading-relaxed">
                             <div className="w-full h-96 rounded-lg overflow-hidden border">
